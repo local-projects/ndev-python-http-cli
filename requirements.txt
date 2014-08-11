@@ -1,8 +1,13 @@
 #-------------------------------------------------
 # Prior to this, install all pre-requisites with brew (or OS-specific packaging tool)
+#
+# OSX:
 #    brew install portaudio
 #    brew install libsndfile
 #    brew search libsamplerate
+#
+# Ubuntu:
+#
 #-------------------------------------------------
 
 numpy

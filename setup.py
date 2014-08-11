@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
@@ -9,7 +9,7 @@ def read(fname):
 setup(
 
       name = "ndevutils",
-      version = "0.1",
+      version = "0.2",
 
       description = """Interactive utilities for developers using the NDEV HTTP service.""",
       long_description = read('README.md'),
