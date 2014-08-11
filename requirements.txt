@@ -1,3 +1,12 @@
-requests==1.2.0
+#-------------------------------------------------
+# Prior to this, install all pre-requisites with brew (or OS-specific packaging tool)
+#    brew install portaudio
+#    brew install libsndfile
+#    brew search libsamplerate
+#-------------------------------------------------
+
+numpy
+requests==2.3.0
 pyaudio
 scikits.samplerate
+
