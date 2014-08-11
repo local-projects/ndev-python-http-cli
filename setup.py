@@ -9,7 +9,7 @@ def read(fname):
 setup(
 
       name = "ndevutils",
-      version = "0.2",
+      version = "0.3",
 
       description = """Interactive utilities for developers using the NDEV HTTP service.""",
       long_description = read('README.md'),
@@ -22,8 +22,9 @@ setup(
       packages = find_packages(),
 
       install_requires = [
+           "numpy",
            "pyaudio",
-           "requests == 1.2.0",
+           "requests == 2.3.0",
            "scikits.samplerate",
       ],
 
