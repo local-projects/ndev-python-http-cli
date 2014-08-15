@@ -23,7 +23,6 @@ setup(
 
       install_requires = [
            "numpy",
-           "pyaudio",
            "requests == 2.3.0",
            "scikits.samplerate",
       ],
