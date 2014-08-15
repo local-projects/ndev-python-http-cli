@@ -10,7 +10,7 @@ For OSX:
 
     brew install portaudio
     brew install libsndfile
-    brew search libsamplerate
+    brew install libsamplerate
 
 
 ## Troubleshooting and Tips
