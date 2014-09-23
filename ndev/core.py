@@ -142,10 +142,11 @@ Base Request
 """
 class NDEVRequest(object):
 
-	def __init__(self, credentials=None):
+	def __init__(self, credentials=None, requestor_id=None):
 		self.app_id = credentials.app_id if credentials is not None else None
 		self.app_key = credentials.app_key if credentials is not None else None
-		self.requestor_id = u"fc2jvf7p" # Specifying this will create a voice profile. Use such that one ID per person.
+		# If no id is provided, use a nonsense one
+		self.requestor_id = requestor_id or u"fc2jvf7p" 
 		self.sample_rate = 16000
 		self.nchannels = 1
 		self.sample_width = 0

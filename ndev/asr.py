@@ -51,293 +51,342 @@ class ASR(object):
 	the desired language for Accept-Language
 	"""
 	Languages = {
-	  "English (AUS)": {
-	    "code": "en_AU",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "English (UK)": {
-	    "code": "en_GB",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "English (US)": {
-	    "code": "en_US",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Arabic (Egypt)": {
-	    "code": "ar_EG",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Arabic (Saudi)": {
-	    "code": "ar_SA",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Arabic (UAE)": {
-	    "code": "ar_AE",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Cantonese Chinese": {
-	    "code": "zh_HK",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Catalan (Spain)": {
-	    "code": "ca_ES",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Croatian": {
-	    "code": "hr_HR",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Czech": {
-	    "code": "cs_CZ",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Danish": {
-	    "code": "da_DK",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Dutch": {
-	    "code": "nl_NL",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Finnish": {
-	    "code": "fi_FI",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "French (CAN)": {
-	    "code": "fr_CA",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "French (EU)": {
-	    "code": "fr_FR",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "German": {
-	    "code": "de_DE",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Greek": {
-	    "code": "el_GR",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Hebrew": {
-	    "code": "he_IL",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Hungarian": {
-	    "code": "hu_HU",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Indonesian": {
-	    "code": "id_ID",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Italian": {
-	    "code": "it_IT",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Japanese": {
-	    "code": "ja_JP",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Korean": {
-	    "code": "ko_KR",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Malay": {
-	    "code": "ms_MY",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Mandarin Chinese": {
-	    "code": "cn_MA",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Taiwanese Mandarin": {
-	    "code": "zh_TW",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Norwegian": {
-	    "code": "no_NO",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Polish": {
-	    "code": "pl_PL",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Portuguese (BR)": {
-	    "code": "pt_BR",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Portuguese (EU)": {
-	    "code": "pt_PT",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Romanian": {
-	    "code": "ro_RO",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Russian": {
-	    "code": "ru_RU",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Slovak": {
-	    "code": "sk_SK",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Spanish (EU)": {
-	    "code": "es_ES",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Spanish (MX)": {
-	    "code": "es_MX",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Spanish (US)": {
-	    "code": "es_US",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Swedish": {
-	    "code": "sv_SE",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Thai": {
-	    "code": "th_TH",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Turkish": {
-	    "code": "tr_TR",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Ukranian": {
-	    "code": "uk_UA",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  },
-	  "Vietnamese": {
-	    "code": "vi_VN",
-	    "frequencies": [
-	      8000,
-	      16000
-	    ]
-	  }
+	    "Arabic (Egypt)": {
+	        "code": "ar_EG", 
+	        "code6": "ara-EGY", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Arabic (International)": {
+	        "code": "ar_AE", 
+	        "code6": "ara-XWW", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Arabic (Saudi Arabia)": {
+	        "code": "ar_SA", 
+	        "code6": "ara-SAU", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Bahasa (Indonesia)": {
+	        "code": "id_ID", 
+	        "code6": "ind-IDN", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Cantonese (Simplified)": {
+	        "code": "zh_HK", 
+	        "code6": "yue-CHN", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Catalan": {
+	        "code": "ca_ES", 
+	        "code6": "cat-ESP", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Croatian New": {
+	        "code": "N/A", 
+	        "code6": "hrv-HRV", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Czech": {
+	        "code": "cs_CZ", 
+	        "code6": "ces-CZE", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Danish": {
+	        "code": "da_DK", 
+	        "code6": "dan-DNK", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Dutch": {
+	        "code": "nl_NL", 
+	        "code6": "nld-NLD", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "English (Australia)*": {
+	        "code": "en_AU", 
+	        "code6": "eng-AUS", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "English (GB)*": {
+	        "code": "en_GB", 
+	        "code6": "eng-GBR", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "English (India) New": {
+	        "code": "N/A", 
+	        "code6": "eng-IND", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "English (US)*": {
+	        "code": "en_US", 
+	        "code6": "eng-USA", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Finnish": {
+	        "code": "fi_FI", 
+	        "code6": "fin-FIN", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "French (Canada)": {
+	        "code": "fr_CA", 
+	        "code6": "fra-CAN", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "French (France)*": {
+	        "code": "fr_FR", 
+	        "code6": "fra-FRA", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "German*": {
+	        "code": "de_DE", 
+	        "code6": "deu-DEU", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Greek": {
+	        "code": "el_GR", 
+	        "code6": "ell-GRC", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Hebrew": {
+	        "code": "he_IL", 
+	        "code6": "heb-ISR", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Hindi New": {
+	        "code": "uk_UA", 
+	        "code6": "hin-IND", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Hungarian": {
+	        "code": "hu_HU", 
+	        "code6": "hun-HUN", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Italian": {
+	        "code": "it_IT", 
+	        "code6": "ita-ITA", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Japanese": {
+	        "code": "ja_JP", 
+	        "code6": "jpn-JPN", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Korean": {
+	        "code": "ko_KR", 
+	        "code6": "kor-KOR", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Malay": {
+	        "code": "ms_MY", 
+	        "code6": "zlm-MYS", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Mandarin (China / Simplified)": {
+	        "code": "cn_MA", 
+	        "code6": "cmn-CHN", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Mandarin (Taiwan / Traditional)": {
+	        "code": "zh_TW", 
+	        "code6": "cmn-TWN", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Norwegian": {
+	        "code": "no_NO", 
+	        "code6": "nor-NOR", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Polish": {
+	        "code": "pl_PL", 
+	        "code6": "pol-POL", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Portuguese (Brazil)": {
+	        "code": "pt_BR", 
+	        "code6": "por-BRA", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Portuguese (Portugal)": {
+	        "code": "pt_PT", 
+	        "code6": "por-PRT", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Romanian": {
+	        "code": "ro_RO", 
+	        "code6": "ron-ROU", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Russian": {
+	        "code": "ru_RU", 
+	        "code6": "rus-RUS", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Slovak": {
+	        "code": "sk_SK", 
+	        "code6": "slk-SVK", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Spanish (LatAm)": {
+	        "code": "es_MX", 
+	        "code6": "spa-XLA", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Spanish (Spain)": {
+	        "code": "es_ES", 
+	        "code6": "spa-ESP", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Swedish": {
+	        "code": "sv_SE", 
+	        "code6": "swe-SWE", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Thai": {
+	        "code": "th_TH", 
+	        "code6": "tha-THA", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Turkish": {
+	        "code": "tr_TR", 
+	        "code6": "tur-TUR", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Ukrainian": {
+	        "code": "uk_UA", 
+	        "code6": "ukr-UKR", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }, 
+	    "Vietnamese": {
+	        "code": "vi_VN", 
+	        "code6": "vie-VNM", 
+	        "frequencies": [
+	            "8000", 
+	            "16000"
+	        ]
+	    }
 	}
 
 	"""
@@ -382,9 +431,9 @@ class ASR(object):
 	
 	"""
 	@staticmethod
-	def make_request(creds=None, desired_asr_lang=None, filename=None, mode='quiet'):
+	def make_request(creds=None, desired_asr_lang=None, filename=None, mode='quiet', requestor_id=None):
 
-		aReq = ChunkedASRRequest(desired_asr_lang, credentials=creds)
+		aReq = ChunkedASRRequest(desired_asr_lang, credentials=creds, requestor_id=requestor_id)
 		aReq.load_file(filename)
 		
 		analyze_function = None
@@ -417,8 +466,9 @@ class ASR(object):
 		ret = None
 		if language_code is not None:
 			for (k,v) in list(ASR.Languages.items()):
-				if v['code'] == language_code:
+				if v['code'] == language_code or v['code6'] == language_code:
 					ret = (k,v)
+
 		if ret is not None:
 			return {
 				'display': ret[0],
@@ -491,11 +541,15 @@ class ChunkedASRRequest(NDEVRequest):
 	def get_headers(self):
 		headers = {
 			u"Content-Type": self._build_header_value(ASR.ContentType,self.audio_type),
-			u"Accept-Language": self.language['properties']['code'],
 			u"Transfer-Encoding": u"chunked", 
 			u"Accept": ASR.Accept[self.response_type],
 			u"Accept-Topic": u"Dictation"
 		}
+		if hasattr(self.language['properties'], 'code6'):
+			headers[u"Accept-Language"] = self.language['properties']['code6']
+		else:
+			headers[u"Accept-Language"] = self.language['properties']['code']
+
 		return headers
 
 	def build_url(self):
