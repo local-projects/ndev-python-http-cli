@@ -9,7 +9,7 @@ def read(fname):
 setup(
 
       name = "ndevutils",
-      version = "0.3",
+      version = "0.4",
 
       description = """Interactive utilities for developers using the NDEV HTTP service.""",
       long_description = read('README.md'),
