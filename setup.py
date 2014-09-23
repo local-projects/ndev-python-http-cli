@@ -9,15 +9,15 @@ def read(fname):
 setup(
 
       name = "ndevutils",
-      version = "0.4",
+      version = "0.5",
 
       description = """Interactive utilities for developers using the NDEV HTTP service.""",
       long_description = read('README.md'),
 
       url = "", # TODO: add github URL
 
-      author = "Nuance Communications, Inc.",
-      author_email = "nirvana.tikku@nuance.com",
+      author = "Local Projects, Inc",
+      author_email = "sundar@localprojects.net",
 
       packages = find_packages(),
 

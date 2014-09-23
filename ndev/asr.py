@@ -517,8 +517,8 @@ An ASR Request. Done via Transfer-Encoding: Chunked.
 """	
 class ChunkedASRRequest(NDEVRequest):
 
-	def __init__(self, language, credentials=None):
-		super(ChunkedASRRequest,self).__init__(credentials=credentials)
+	def __init__(self, language, credentials=None, requestor_id=None):
+		super(ChunkedASRRequest,self).__init__(credentials=credentials, requestor_id=requestor_id)
 		self.url = credentials.asr_url
 		self.path = credentials.asr_endpoint
 		self.language = language 
